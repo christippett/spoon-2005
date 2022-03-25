@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="ROBOTS" content="NOINDEX, FOLLOW" />
+<link rel="icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
+<title>SPOON.net.nz / Post a reply</title>
+<link rel="stylesheet" type="text/css" href="style/Spoon.css" />
+<meta name="keywords" content="spoon, hosting, free, direct admin, installatron, new zealand" />
+<meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
+<script type="text/javascript">
+<!--
+function process_form(the_form)
+{
+	var element_names = new Object()
+	element_names["req_email"] = "E-mail"
+	element_names["req_subject"] = "Subject"
+	element_names["req_message"] = "Message"
+
+	if (document.all || document.getElementById)
+	{
+		for (i = 0; i < the_form.length; ++i)
+		{
+			var elem = the_form.elements[i]
+			if (elem.name && elem.name.substring(0, 4) == "req_")
+			{
+				if (elem.type && (elem.type=="text" || elem.type=="textarea" || elem.type=="password" || elem.type=="file") && elem.value=='')
+				{
+					alert("\"" + element_names[elem.name] + "\" is a required field in this form.")
+					elem.focus()
+					return false
+				}
+			}
+		}
+	}
+
+	return true
+}
+// -->
+</script>
+</head>
+<body onload="document.getElementById('post').req_message.focus()">
+
+<div id="punwrap">
+<div id="punpost" class="pun">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="headerimg"><img src="images/top.gif" alt="SPOON Hosting" /></div>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex"><a href="index.php.html">Index</a></li>
+				<li id="navforums"><a href="forum.php.html">Forums</a></li>
+				<li id="navsearch"><a href="search.php.html">Search</a></li>
+				<li id="navprofile"><a href="profile.php%3Fid=2.html">Profile</a></li>
+				<li id="navadmin"><a href="admin_index.php.html">Administration</a></li>
+				<li id="navlogout"><a href="login.php%3Faction=out&amp;id=2.html">Logout</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<ul class="conl">
+				<li>Logged in as <strong>spoon</strong></li>
+				<li>Last visit: Today 07:36:09</li>
+			</ul>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="linkst" style="margin-top: 0px;">
+	<div class="inbox">
+		<ul><li><a href="forum.php.html">Index</a></li><li>&nbsp;-&nbsp;<a href="viewforum.php%3Fid=5.html">SPOON News</a></li><li>&nbsp;&raquo;&nbsp;Server Reinstalled</li></ul>
+	</div>
+</div>
+
+<div class="blockform">
+	<h2><span>Post a reply</span></h2>
+	<div class="box">
+		<form id="post" method="post" action="http://localhost:8787/post.php?action=post&amp;tid=11" onsubmit="this.submit.disabled=true;if(process_form(this)){return true;}else{this.submit.disabled=false;return false;}">
+			<div class="inform">
+				<fieldset>
+					<legend>Write your message and submit</legend>
+					<div class="infldset txtarea">
+						<input type="hidden" name="form_sent" value="1" />
+						<input type="hidden" name="form_user" value="spoon" />
+						<label><strong>Message</strong><br />
+						<textarea name="req_message" rows="20" cols="95" tabindex="1">[quote=spoon]A few days ago I reinstalled CentOS on this machine. I was told that Ubuntu was a nice alternative as a server O.S. (essentially a more up-to-date release of Debian), however support for Direct Admin wasn't definite, so I went with CentOS.
+
+After an initial problem with a router blocking ports to the server, everything is now working smooth.
+
+The server's uptime is being monitored by siteuptime.com:
+http://www.siteuptime.com/statistics.php?Id=28294&amp;&amp;UserId=13614[/quote]
+</textarea><br /></label>
+						<ul class="bblinks">
+							<li><a href="help.php.html#bbcode" onclick="window.open(this.href); return false;">BBCode</a>: on</li>
+							<li><a href="help.php.html#img" onclick="window.open(this.href); return false;">[img] tag</a>: on</li>
+							<li><a href="help.php.html#smilies" onclick="window.open(this.href); return false;">Smilies</a>: on</li>
+						</ul>
+					</div>
+				</fieldset>
+			</div>
+			<div class="inform">
+				<fieldset>
+					<legend>Options</legend>
+					<div class="infldset">
+						<div class="rbox">
+							<label><input type="checkbox" name="hide_smilies" value="1" tabindex="2" />Never show smilies as icons for this post<br /></label>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+			<p><input type="submit" name="submit" value="Submit" tabindex="3" accesskey="s" /><input type="submit" name="preview" value="Preview" tabindex="4" accesskey="p" /><a href="javascript:history.go(-1)">Go back</a></p>
+		</form>
+	</div>
+</div>
+
+
+<div id="postreview" class="blockpost">
+	<h2><span>Topic review (newest first)</span></h2>
+	<div class="box rowodd">
+		<div class="inbox">
+			<div class="postleft">
+				<dl>
+					<dt><strong>spoon</strong></dt>
+					<dd>20-12-2005 07:34:12</dd>
+				</dl>
+			</div>
+			<div class="postright">
+				<div class="postmsg">
+					<p>A few days ago I reinstalled CentOS on this machine. I was told that Ubuntu was a nice alternative as a server O.S. (essentially a more up-to-date release of Debian), however support for Direct Admin wasn't definite, so I went with CentOS.<br /><br />After an initial problem with a router blocking ports to the server, everything is now working smooth.<br /><br />The server's uptime is being monitored by siteuptime.com:<br /><a href="http://www.siteuptime.com/statistics.php?Id=28294&amp;&amp;UserId=13614">http://www.siteuptime.com/statistics.ph &hellip; erId=13614</a></p>				</div>
+			</div>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div class="inbox">
+			<p class="conr">Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
+			<p class="conr">[ Generated in 0.007 seconds, 8 queries executed ]</p>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div id="plans">
+  <a href="plans.php.html"><img src="http://tennis-bot:8787/images/front_plans.gif" alt="Plans" width="89" height="43" /></a><br />
+  <div id="plan1">
+	  <span class="plans">500 MB disk space</span><br />
+	  <span class="plans">2.5 GB bandwidth</span><br />
+	  <div class="price"><a href="plans.php.html"><img src="http://tennis-bot:8787/images/plan_1.gif" alt="Plan 01" /></a></div>
+  </div>
+  <div id="plan2">
+	  <span class="plans">2 GB disk space</span><br />
+	  <span class="plans">10 GB bandwidth</span><br />
+	  <div class="price"><a href="plans.php.html"><img src="http://tennis-bot:8787/images/plan_2.gif" alt="Plan 02" /></a></div>
+  </div>
+  <div id="plan3">
+	  <span class="plans">5 GB disk space</span><br />
+	  <span class="plans">25 GB bandwidth</span><br />
+	  <div class="price"><a href="plans.php.html"><img src="http://tennis-bot:8787/images/plan_3.gif" alt="Plan 03" /></a></div>
+  </div>
+</div>
+
+</body>
+</html>

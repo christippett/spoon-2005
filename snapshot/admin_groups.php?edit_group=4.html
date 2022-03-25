@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="ROBOTS" content="NOINDEX, FOLLOW" />
+<link rel="icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
+<title>SPOON.net.nz / Admin / User groups</title>
+<link rel="stylesheet" type="text/css" href="style/Spoon.css" />
+<link rel="stylesheet" type="text/css" href="style/imports/base_admin.css" />
+<meta name="keywords" content="spoon, hosting, free, direct admin, installatron, new zealand" />
+<meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
+<script type="text/javascript">
+<!--
+function process_form(the_form)
+{
+	var element_names = new Object()
+	element_names["req_title"] = "Group title"
+
+	if (document.all || document.getElementById)
+	{
+		for (i = 0; i < the_form.length; ++i)
+		{
+			var elem = the_form.elements[i]
+			if (elem.name && elem.name.substring(0, 4) == "req_")
+			{
+				if (elem.type && (elem.type=="text" || elem.type=="textarea" || elem.type=="password" || elem.type=="file") && elem.value=='')
+				{
+					alert("\"" + element_names[elem.name] + "\" is a required field in this form.")
+					elem.focus()
+					return false
+				}
+			}
+		}
+	}
+
+	return true
+}
+// -->
+</script>
+</head>
+<body onload="document.getElementById('groups2').req_title.focus()">
+
+<div id="punwrap">
+<div id="punadmin" class="pun">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="headerimg"><img src="images/top.gif" alt="SPOON.net.nz" /></div>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex"><a href="index.php.html">Index</a></li>
+				<li id="navforums"><a href="forum.php.html">Forums</a></li>
+				<li id="navsearch"><a href="search.php.html">Search</a></li>
+				<li id="navprofile"><a href="profile.php%3Fid=2.html">Profile</a></li>
+				<li id="navadmin"><a href="admin_index.php.html">Administration</a></li>
+				<li id="navlogout"><a href="login.php%3Faction=out&amp;id=2.html">Logout</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<ul class="conl">
+				<li>Logged in as <strong>spoon</strong></li>
+				<li>Last visit: Today 07:36:09</li>
+			</ul>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="adminconsole">
+	<div id="adminmenu" class="blockmenu">
+		<h2><span>Admin menu</span></h2>
+		<div class="box">
+			<div class="inbox">
+				<ul>
+					<li><a href="admin_index.php.html">Index</a></li>
+	
+					<li><a href="admin_categories.php.html">Categories</a></li>
+	
+					<li><a href="admin_forums.php.html">Forums</a></li>
+				
+					<li><a href="admin_users.php.html">Users</a></li>
+	
+					<li class="isactive"><a href="admin_groups.php.html">User groups</a></li>
+	
+					<li><a href="admin_options.php.html">Options</a></li>
+	
+					<li><a href="admin_permissions.php.html">Permissions</a></li>
+					<li><a href="admin_censoring.php.html">Censoring</a></li>
+	
+					<li><a href="admin_ranks.php.html">Ranks</a></li>
+					<li><a href="admin_bans.php.html">Bans</a></li>
+	
+					<li><a href="admin_prune.php.html">Prune</a></li>
+	
+					<li><a href="admin_maintenance.php.html">Maintenance</a></li>
+					<li><a href="admin_reports.php.html">Reports</a></li>		
+				</ul>
+			</div>
+		</div>
+		<h2 class="block2"><span>SPOON menu</span></h2>
+		<div class="box">
+			<div class="inbox">
+				<ul>
+	
+					<li><a href="admin_free.php.html">SPOON Free</a></li>
+		
+	
+					<li><a href="admin_recurring.php.html">Recurring</a></li>
+				
+		
+				</ul>
+			</div>
+		</div>
+		<h2 class="block2"><span>Plugins</span></h2>
+		<div class="box">
+			<div class="inbox">
+				<ul>
+					<li><a href="admin_loader.php%3Fplugin=AMP_Example.php.html">Example</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="blockform">
+		<h2><span>Group settings</span></h2>
+		<div class="box">
+			<form id="groups2" method="post" action="admin_groups.php.html" onsubmit="return process_form(this)">
+				<p class="submittop"><input type="submit" name="add_edit_group" value=" Save " /></p>
+				<div class="inform">
+					<input type="hidden" name="mode" value="edit" />
+				<input type="hidden" name="group_id" value="4" />
+					<fieldset>
+						<legend>Setup group options and permissions</legend>
+						<div class="infldset">
+							<p>Below options and permissions are the default permissions for the user group. These options apply if no forum specific permissions are in effect.</p>
+							<table class="aligntop" cellspacing="0">
+								<tr>
+									<th scope="row">Group title</th>
+									<td>
+										<input type="text" name="req_title" size="25" maxlength="50" value="Members" tabindex="1" />
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">User title</th>
+									<td>
+										<input type="text" name="user_title" size="25" maxlength="50" value="" tabindex="2" />
+										<span>This title will override any rank users in this group have attained. Leave blank to use default title or rank.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Read board</th>
+									<td>
+										<input type="radio" name="read_board" value="1" checked="checked" tabindex="3" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="read_board" value="0" tabindex="4" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to view the board. This setting applies to every aspect of the board and can therefore not be overridden by forum specific settings. If this is set to "No", users in this group will only be able to login/logout and register.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Post replies</th>
+									<td>
+										<input type="radio" name="post_replies" value="1" checked="checked" tabindex="5" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="post_replies" value="0" tabindex="6" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to post replies in topics.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Post topics</th>
+									<td>
+										<input type="radio" name="post_topics" value="1" checked="checked" tabindex="7" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="post_topics" value="0" tabindex="8" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to post new topics.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Edit posts</th>
+									<td>
+										<input type="radio" name="edit_posts" value="1" checked="checked" tabindex="11" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="edit_posts" value="0" tabindex="12" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to edit their own posts.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Delete posts</th>
+									<td>
+										<input type="radio" name="delete_posts" value="1" checked="checked" tabindex="13" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="delete_posts" value="0" tabindex="14" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to delete their own posts.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Delete topics</th>
+									<td>
+										<input type="radio" name="delete_topics" value="1" checked="checked" tabindex="15" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="delete_topics" value="0" tabindex="16" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to delete their own topics (including any replies).</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Set user title</th>
+									<td>
+										<input type="radio" name="set_title" value="1" tabindex="17" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="set_title" value="0" checked="checked" tabindex="18" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to set their own user title.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Use search</th>
+									<td>
+										<input type="radio" name="search" value="1" checked="checked" tabindex="19" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="search" value="0" tabindex="20" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to use the search feature.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Search user list</th>
+									<td>
+										<input type="radio" name="search_users" value="1" checked="checked" tabindex="21" />&nbsp;<strong>Yes</strong>&nbsp;&nbsp;&nbsp;<input type="radio" name="search_users" value="0" tabindex="22" />&nbsp;<strong>No</strong>
+										<span>Allow users in this group to freetext search for users in the user list.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Edit subjects interval</th>
+									<td>
+										<input type="text" name="edit_subjects_interval" size="5" maxlength="5" value="300" tabindex="23" />
+										<span>Number of seconds after post time that users in this group may edit the subject of topics they've posted. Set to 0 to allow edits indefinitely.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Post flood interval</th>
+									<td>
+										<input type="text" name="post_flood" size="5" maxlength="4" value="60" tabindex="24" />
+										<span>Number of seconds that users in this group have to wait between posts. Set to 0 to disable.</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">Search flood interval</th>
+									<td>
+										<input type="text" name="search_flood" size="5" maxlength="4" value="30" tabindex="25" />
+										<span>Number of seconds that users in this group have to wait between searches. Set to 0 to disable.</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</fieldset>
+				</div>
+				<p class="submitend"><input type="submit" name="add_edit_group" value=" Save " tabindex="26" /></p>
+			</form>
+		</div>
+	</div>
+	<div class="clearer"></div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div class="inbox">
+			<p class="conr">Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
+			<p class="conr">[ Generated in 0.011 seconds, 6 queries executed ]</p>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

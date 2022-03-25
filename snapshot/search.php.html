@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="ROBOTS" content="NOINDEX, FOLLOW" />
+<link rel="icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
+<title>SPOON.net.nz / Search</title>
+<link rel="stylesheet" type="text/css" href="style/Spoon.css" />
+<meta name="keywords" content="spoon, hosting, free, direct admin, installatron, new zealand" />
+<meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
+</head>
+<body onload="document.getElementById('search').keywords.focus()">
+
+<div id="punwrap">
+<div id="punsearch" class="pun">
+
+<div id="brdheader" class="block">
+	<div class="box">
+		<div id="headerimg"><img src="images/top.gif" alt="SPOON Hosting" /></div>
+		<div id="brdmenu" class="inbox">
+			<ul>
+				<li id="navindex"><a href="index.php.html">Index</a></li>
+				<li id="navforums"><a href="forum.php.html">Forums</a></li>
+				<li id="navsearch"><a href="search.php.html">Search</a></li>
+				<li id="navprofile"><a href="profile.php%3Fid=2.html">Profile</a></li>
+				<li id="navadmin"><a href="admin_index.php.html">Administration</a></li>
+				<li id="navlogout"><a href="login.php%3Faction=out&amp;id=2.html">Logout</a></li>
+			</ul>
+		</div>
+		<div id="brdwelcome" class="inbox">
+			<ul class="conl">
+				<li>Logged in as <strong>spoon</strong></li>
+				<li>Last visit: 31-12-2005 12:30:04</li>
+			</ul>
+			<ul class="conr">
+				<li><a href="search.php%3Faction=show_new.html">Show new posts since last visit</a></li>
+				<li><a href="misc.php%3Faction=markread.html">Mark all topics as read</a></li>
+			</ul>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="searchform" class="blockform">
+	<h2><span>Search</span></h2>
+	<div class="box">
+		<form id="search" method="get" action="search.php.html">
+			<div class="inform">
+				<fieldset>
+					<legend>Enter your search criteria</legend>
+					<div class="infldset">
+						<input type="hidden" name="action" value="search" />
+						<label class="conl">Keyword search<br /><input type="text" name="keywords" size="40" maxlength="100" /><br /></label>
+						<label class="conl">Author search<br /><input id="author" type="text" name="author" size="25" maxlength="25" /><br /></label>
+						<p class="clearb">To search by keyword, enter a term or terms to search for. Separate terms with spaces. Use AND, OR and NOT to refine your search. To search by author enter the username of the author whose posts you wish to search for. Use wildcard character * for partial matches.</p>
+					</div>
+				</fieldset>
+			</div>
+			<div class="inform">
+				<fieldset>
+					<legend>Select where to search</legend>
+					<div class="infldset">
+						<label class="conl">Forum						<br /><select id="forum" name="forum">
+							<option value="-1">All forums</option>
+							<optgroup label="SPOON Hosting">
+								<option value="4">About SPOON</option>
+								<option value="2">Pre-sales Questions</option>
+							</optgroup>
+							<optgroup label="SPOON News">
+								<option value="5">SPOON News</option>
+							</optgroup>
+							<optgroup label="SPOON Client Support">
+								<option value="6">SPOON Support</option>
+								<option value="8">Bugs and Suggestions</option>
+							</optgroup>
+						</select>
+						<br /></label>
+						<label class="conl">Search in						<br /><select id="search_in" name="search_in">
+							<option value="all">Message text and topic subject</option>
+							<option value="message">Message text only</option>
+							<option value="topic">Topic subject only</option>
+						</select>
+						<br /></label>
+						<p class="clearb">Choose in which forum you would like to search and if you want to search in topic subjects, message text or both.</p>
+					</div>
+				</fieldset>
+			</div>
+			<div class="inform">
+				<fieldset>
+					<legend>Select how to view search results</legend>
+					<div class="infldset">
+						<label class="conl">Sort by						<br /><select name="sort_by">
+							<option value="0">Post time</option>
+							<option value="1">Author</option>
+							<option value="2">Subject</option>
+							<option value="3">Forum</option>
+						</select>
+						<br /></label>
+						<label class="conl">Sort order						<br /><select name="sort_dir">
+							<option value="DESC">Descending</option>
+							<option value="ASC">Ascending</option>
+						</select>
+						<br /></label>
+						<label class="conl">Show results as						<br /><select name="show_as">
+							<option value="topics">Topics</option>
+							<option value="posts">Posts</option>
+						</select>
+						<br /></label>
+						<p class="clearb">You can choose how you wish to sort and show your results.</p>
+					</div>
+				</fieldset>
+			</div>
+			<p><input type="submit" name="search" value="Submit" accesskey="s" /></p>
+		</form>
+	</div>
+</div>
+
+<div id="brdfooter" class="block">
+	<h2><span>Board footer</span></h2>
+	<div class="box">
+		<div class="inbox">
+			<p class="conr">Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
+			<p class="conr">[ Generated in 0.006 seconds, 6 queries executed ]</p>
+			<div class="clearer"></div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div id="plans">
+  <a href="plans.php.html"><img src="http://tennis-bot:8787/images/front_plans.gif" alt="Plans" width="89" height="43" /></a><br />
+  <div id="plan1">
+	  <span class="plans">500 MB disk space</span><br />
+	  <span class="plans">2.5 GB bandwidth</span><br />
+	  <div class="price"><a href="plans.php.html"><img src="http://tennis-bot:8787/images/plan_1.gif" alt="Plan 01" /></a></div>
+  </div>
+  <div id="plan2">
+	  <span class="plans">2 GB disk space</span><br />
+	  <span class="plans">10 GB bandwidth</span><br />
+	  <div class="price"><a href="plans.php.html"><img src="http://tennis-bot:8787/images/plan_2.gif" alt="Plan 02" /></a></div>
+  </div>
+  <div id="plan3">
+	  <span class="plans">5 GB disk space</span><br />
+	  <span class="plans">25 GB bandwidth</span><br />
+	  <div class="price"><a href="plans.php.html"><img src="http://tennis-bot:8787/images/plan_3.gif" alt="Plan 03" /></a></div>
+  </div>
+</div>
+
+</body>
+</html>

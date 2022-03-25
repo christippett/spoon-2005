@@ -5,53 +5,29 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta name="ROBOTS" content="NOINDEX, FOLLOW" />
     <title>SPOON.net.nz / Edit post</title>
-    <link
-      rel="icon"
-      href="https://spoon.christippett.dev/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://spoon.christippett.dev/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="https://spoon.christippett.dev/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="https://spoon.christippett.dev/favicon-16x16.png"
-    />
-    <link
-      rel="manifest"
-      href="https://spoon.christippett.dev/site.webmanifest"
-    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <script
       defer
       data-domain="spoon.christippett.dev"
       src="https://plausible.io/js/plausible.js"
     ></script>
     <link rel="stylesheet" type="text/css" href="style/Spoon.css" />
-    <meta
-      name="keywords"
-      content="spoon, hosting, free, direct admin, installatron, new zealand"
-    />
+    <meta name="keywords" content="spoon, hosting, free, direct admin, installatron, new zealand" />
     <meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
     <script type="text/javascript">
       <!--
       function process_form(the_form) {
-        var element_names = new Object()
-        element_names["req_subject"] = "Subject"
-        element_names["req_message"] = "Message"
+        var element_names = new Object();
+        element_names["req_subject"] = "Subject";
+        element_names["req_message"] = "Message";
 
         if (document.all || document.getElementById) {
           for (i = 0; i < the_form.length; ++i) {
-            var elem = the_form.elements[i]
+            var elem = the_form.elements[i];
             if (elem.name && elem.name.substring(0, 4) == "req_") {
               if (
                 elem.type &&
@@ -61,19 +37,15 @@
                   elem.type == "file") &&
                 elem.value == ""
               ) {
-                alert(
-                  '"' +
-                    element_names[elem.name] +
-                    '" is a required field in this form.',
-                )
-                elem.focus()
-                return false
+                alert('"' + element_names[elem.name] + '" is a required field in this form.');
+                elem.focus();
+                return false;
               }
             }
           }
         }
 
-        return true
+        return true;
       }
       // -->
     </script>
@@ -116,9 +88,7 @@
           <div class="inbox">
             <ul>
               <li><a href="forum.php.html">Index</a></li>
-              <li>
-                &nbsp;-&nbsp;<a href="viewforum.php%3Fid=4.html">About SPOON</a>
-              </li>
+              <li> &nbsp;-&nbsp;<a href="viewforum.php%3Fid=4.html">About SPOON</a> </li>
               <li>&nbsp;-&nbsp;About SPOON</li>
             </ul>
           </div>
@@ -130,7 +100,7 @@
             <form
               id="edit"
               method="post"
-              action="https://spoon.christippett.dev/edit.php?id=12&amp;action=edit"
+              action="/edit.php?id=12&amp;action=edit"
               onsubmit="return process_form(this)"
             >
               <div class="inform">
@@ -151,12 +121,7 @@
                     /></label>
                     <label
                       >Message<br />
-                      <textarea
-                        name="req_message"
-                        rows="20"
-                        cols="95"
-                        tabindex="2"
-                      >
+                      <textarea name="req_message" rows="20" cols="95" tabindex="2">
 [b]The Beginning[/b]
 A few years ago I started playing around with web design. I eventually learnt of PHP and MySQL, and how I could deliver dynamic content to people from a website. The only catch was, I needed a host that could support both PHP and MySQL in order for it to work.
 
@@ -192,9 +157,7 @@ SPOON Hosting offers New Zealand web hosting, for New Zealanders.</textarea
                         >: on
                       </li>
                       <li>
-                        <a
-                          href="help.php.html#img"
-                          onclick="window.open(this.href); return false;"
+                        <a href="help.php.html#img" onclick="window.open(this.href); return false;"
                           >[img] tag</a
                         >: on
                       </li>
@@ -229,8 +192,7 @@ SPOON Hosting offers New Zealand web hosting, for New Zealanders.</textarea
                           value="1"
                           tabindex="4"
                           checked="checked"
-                        />&nbsp;Silent edit (don't display "Edited by ..." in
-                        topic view)</label
+                        />&nbsp;Silent edit (don't display "Edited by ..." in topic view)</label
                       >
                     </div>
                   </div>
@@ -260,12 +222,10 @@ SPOON Hosting offers New Zealand web hosting, for New Zealanders.</textarea
           <div class="box">
             <div class="inbox">
               <p class="conr">
-                Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy;
-                Copyright 2002&#8211;2005 Rickard Andersson
+                Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy; Copyright
+                2002&#8211;2005 Rickard Andersson
               </p>
-              <p class="conr">
-                [ Generated in 0.006 seconds, 7 queries executed ]
-              </p>
+              <p class="conr"> [ Generated in 0.006 seconds, 7 queries executed ] </p>
               <div class="clearer"></div>
             </div>
           </div>
@@ -275,37 +235,27 @@ SPOON Hosting offers New Zealand web hosting, for New Zealanders.</textarea
 
     <div id="plans">
       <a href="plans.php.html"
-        ><img
-          src="http://tennis-bot:8787/images/front_plans.gif"
-          alt="Plans"
-          width="89"
-          height="43" /></a
+        ><img src="/images/front_plans.gif" alt="Plans" width="89" height="43" /></a
       ><br />
       <div id="plan1">
         <span class="plans">500 MB disk space</span><br />
         <span class="plans">2.5 GB bandwidth</span><br />
         <div class="price">
-          <a href="plans.php.html"
-            ><img src="http://tennis-bot:8787/images/plan_1.gif" alt="Plan 01"
-          /></a>
+          <a href="plans.php.html"><img src="/images/plan_1.gif" alt="Plan 01" /></a>
         </div>
       </div>
       <div id="plan2">
         <span class="plans">2 GB disk space</span><br />
         <span class="plans">10 GB bandwidth</span><br />
         <div class="price">
-          <a href="plans.php.html"
-            ><img src="http://tennis-bot:8787/images/plan_2.gif" alt="Plan 02"
-          /></a>
+          <a href="plans.php.html"><img src="/images/plan_2.gif" alt="Plan 02" /></a>
         </div>
       </div>
       <div id="plan3">
         <span class="plans">5 GB disk space</span><br />
         <span class="plans">25 GB bandwidth</span><br />
         <div class="price">
-          <a href="plans.php.html"
-            ><img src="http://tennis-bot:8787/images/plan_3.gif" alt="Plan 03"
-          /></a>
+          <a href="plans.php.html"><img src="/images/plan_3.gif" alt="Plan 03" /></a>
         </div>
       </div>
     </div>

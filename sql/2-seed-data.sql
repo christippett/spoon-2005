@@ -1,4 +1,6 @@
 -- Mirror 'news' posts from forum on the front-page
+TRUNCATE TABLE `news`;
+
 INSERT INTO `news` (title, body, `timestamp`)
 SELECT
   t.subject AS title,
@@ -12,16 +14,15 @@ INNER JOIN
 WHERE
   t.forum_id = 5;
 
--- Populate missing plan entry for free tier
-INSERT INTO `plans` VALUES (
-  0, 'SPOON Free', 0.0, 10, 500, 1, 0, 1, 0, '/images/plan_1.gif'
-);
 
 -- Activate hosting for exsting users
 UPDATE `users` SET hosting = 1
 WHERE realname IS NOT NULL;
 
+
 -- Add client record for hosted users
+TRUNCATE TABLE `clients`;
+
 INSERT INTO `clients` (
   `user_id`, `plan_id`, `type`, `ordered`,
   `domain`, `domain_reg`, `username`, `password`,
@@ -47,11 +48,31 @@ FROM
 WHERE
   hosting = 1;
 
--- Add dummy account record
-INSERT INTO `accounts` (user_id)
-SELECT user_id FROM clients;
+
+-- Add account record for client
+TRUNCATE TABLE `accounts`;
+
+INSERT INTO `accounts` (user_id, `type`, domain)
+SELECT user_id, 1, domain FROM clients;
+
+
+-- Setup account as a recurring subscription
+TRUNCATE TABLE `recurrings`;
+
+INSERT INTO `recurrings` (user_id, account_id, `type`, domain, active)
+SELECT
+  user_id,
+  id AS account_id,
+  `type`,
+  domain,
+  '1' AS active
+FROM
+  `accounts`;
+
 
 -- Populate client invoices
+TRUNCATE TABLE `invoices`;
+
 INSERT INTO `invoices` (
   `user_id`, `domain`, `desc`, `total`,
   `issued`, `due`, `fname`, `lname`,

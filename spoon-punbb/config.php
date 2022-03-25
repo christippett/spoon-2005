@@ -2,9 +2,8 @@
 
 $db_type = 'mysqli';
 $db_host = 'db';
-$db_name = 'spoon_site';
-$db_username = 'spoon_site';
-$db_password = '********';
+$db_name = 'spoon';
+$db_username = 'sp00n';
 $db_prefix = '';
 $p_connect = false;
 

@@ -44,7 +44,7 @@ generate_admin_menu('recurring');
 $result = $db->query('SELECT recurrings.*, accounts.domain FROM recurrings, accounts WHERE (recurrings.account_id = accounts.id AND active = \'1\')') or error('Unable to fetch recurrings info', __FILE__, __LINE__, $db->error());
 if ($db->num_rows($result)) {
 	while ($recurrings_data = $db->fetch_assoc($result)) {
-		$actions = '<a href="admin_recurrings.php?action=pause&recurrings_id='.$recurrings_data['id'].'\">Pause</a> - <a href="admin_recurrings.php?action=edit&recurrings_id='.$recurrings_data['id'].'\">Edit</a> - <a href="invoice.php?action=delete&recurring_id='.$recurrings_data['id'].'&id='.$recurrings_data['user_id'].'">Delete</a>';
+		$actions = '<a href="admin_recurring.php?action=pause&recurrings_id='.$recurrings_data['id'].'\">Pause</a> - <a href="admin_recurring.php?action=edit&recurrings_id='.$recurrings_data['id'].'\">Edit</a> - <a href="invoice.php?action=delete&recurring_id='.$recurrings_data['id'].'&id='.$recurrings_data['user_id'].'">Delete</a>';
 		if($recurrings_data['type'] == 1)
 			$type = "Hosting";
 		elseif($recurrings_data['type'] == 2)

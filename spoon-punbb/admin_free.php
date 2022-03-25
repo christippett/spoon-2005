@@ -30,7 +30,7 @@ generate_admin_menu('listfree');
 				</thead>
 				<tbody>
 <?php
-$result = $db->query('SELECT * FROM accounts WHERE type = \'0\'') or error('Unable to fetch account info', __FILE__, __LINE__, $db->error());
+$result = $db->query('SELECT * FROM accounts WHERE `type` = \'0\'') or error('Unable to fetch account info', __FILE__, __LINE__, $db->error());
 if ($db->num_rows($result)) {
 	while ($account_data = $db->fetch_assoc($result)) {
 		$result2 = $db->query('SELECT * FROM '.$db->prefix.'users WHERE id = \''.$account_data['user_id'].'\'') or error('Unable to fetch user info', __FILE__, __LINE__, $db->error());

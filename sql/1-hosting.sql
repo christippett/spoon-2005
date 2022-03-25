@@ -8,7 +8,7 @@ CREATE TABLE `news` (
 
 DROP TABLE IF EXISTS `invoices`;
 CREATE TABLE `invoices` (
-  id int DEFAULT '0',
+  id int AUTO_INCREMENT,
   user_id int,
   domain varchar(255),
   `desc` text,
@@ -29,7 +29,21 @@ CREATE TABLE `invoices` (
 
 DROP TABLE IF EXISTS `accounts`;
 CREATE TABLE `accounts` (
-  id int DEFAULT '0',
+  id int AUTO_INCREMENT,
   user_id int,
+  `type` int DEFAULT '0',
+  domain varchar(255),
+  PRIMARY KEY (`id`)
+);
+
+
+DROP TABLE IF EXISTS `recurrings`;
+CREATE TABLE `recurrings` (
+  id int AUTO_INCREMENT,
+  user_id int,
+  account_id int,
+  domain varchar(255),
+  `type` int DEFAULT '1'
+  active int DEFAULT 1,
   PRIMARY KEY (`id`)
 );

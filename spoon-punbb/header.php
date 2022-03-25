@@ -63,9 +63,13 @@ ob_start();
 if (!defined('PUN_ALLOW_INDEX'))
 	echo '<meta name="ROBOTS" content="NOINDEX, FOLLOW" />'."\n";
 ?>
-<link rel="icon" href="./favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 <title><?php echo $page_title ?></title>
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<script defer data-domain="spoon.christippett.dev" src="https://plausible.io/js/plausible.js"></script>
 <?php
 if(!strpos($_SERVER['HTTP_USER_AGENT'], "MSIE") || strpos($_SERVER['HTTP_USER_AGENT'], "Opera")) {
 ?>

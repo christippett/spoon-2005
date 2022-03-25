@@ -335,7 +335,7 @@ CREATE TABLE IF NOT EXISTS `plans` (
 --
 -- Dumping data for table `plans`
 --
-INSERT INTO `plans` VALUES (0, 'SPOON Free', 0.0, 10, 500, 1, 0, 1, 0, NULL);
+INSERT INTO `plans` VALUES (0, 'SPOON Free', 0.0, 10, 500, 1, 0, 1, 0, '/images/plan_0.gif');
 INSERT INTO `plans` VALUES (1, 'Plan 01', 12.95, 500, 2500, 1, 100, 100, 1, '/images/plan_1.gif');
 INSERT INTO `plans` VALUES (2, 'Plan 02', 25.95, 2000, 10000, 1, 100, 100, 1, '/images/plan_2.gif');
 INSERT INTO `plans` VALUES (3, 'Plan 03', 39.95, 5000, 25000, 1, 100, 100, 1, '/images/plan_3.gif');

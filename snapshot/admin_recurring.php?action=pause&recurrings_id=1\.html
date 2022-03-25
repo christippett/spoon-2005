@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="ROBOTS" content="NOINDEX, FOLLOW" />
+    <title>SPOON.net.nz / Admin / Recurring Invoices</title>
+    <link
+      rel="icon"
+      href="http://spoon.christippett.dev/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="http://spoon.christippett.dev/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="http://spoon.christippett.dev/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="http://spoon.christippett.dev/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="http://spoon.christippett.dev/site.webmanifest"
+    />
+    <script
+      defer
+      data-domain="spoon.christippett.dev"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style/Spoon.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/imports/base_admin.css"
+    />
+    <meta
+      name="keywords"
+      content="spoon, hosting, free, direct admin, installatron, new zealand"
+    />
+    <meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
+  </head>
+  <body>
+    <div id="punwrap">
+      <div id="punadmin" class="pun">
+        <div id="brdheader" class="block">
+          <div class="box">
+            <div id="headerimg">
+              <img src="images/top.gif" alt="SPOON.net.nz" />
+            </div>
+            <div id="brdmenu" class="inbox">
+              <ul>
+                <li id="navindex"><a href="index.php.html">Index</a></li>
+                <li id="navforums"><a href="forum.php.html">Forums</a></li>
+                <li id="navsearch"><a href="search.php.html">Search</a></li>
+                <li id="navprofile">
+                  <a href="profile.php%3Fid=2.html">Profile</a>
+                </li>
+                <li id="navadmin">
+                  <a href="admin_index.php.html">Administration</a>
+                </li>
+                <li id="navlogout">
+                  <a href="login.php%3Faction=out&amp;id=2.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+            <div id="brdwelcome" class="inbox">
+              <ul class="conl">
+                <li>Logged in as <strong>spoon</strong></li>
+                <li>Last visit: Today 13:52:12</li>
+              </ul>
+              <div class="clearer"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="adminconsole">
+          <div id="adminmenu" class="blockmenu">
+            <h2><span>Admin menu</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li><a href="admin_index.php.html">Index</a></li>
+
+                  <li><a href="admin_categories.php.html">Categories</a></li>
+
+                  <li><a href="admin_forums.php.html">Forums</a></li>
+
+                  <li><a href="admin_users.php.html">Users</a></li>
+
+                  <li><a href="admin_groups.php.html">User groups</a></li>
+
+                  <li><a href="admin_options.php.html">Options</a></li>
+
+                  <li><a href="admin_permissions.php.html">Permissions</a></li>
+                  <li><a href="admin_censoring.php.html">Censoring</a></li>
+
+                  <li><a href="admin_ranks.php.html">Ranks</a></li>
+                  <li><a href="admin_bans.php.html">Bans</a></li>
+
+                  <li><a href="admin_prune.php.html">Prune</a></li>
+
+                  <li><a href="admin_maintenance.php.html">Maintenance</a></li>
+                  <li><a href="admin_reports.php.html">Reports</a></li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="block2"><span>SPOON menu</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li><a href="admin_free.php.html">SPOON Free</a></li>
+
+                  <li class="isactive">
+                    <a href="admin_recurring.php.html">Recurring</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="block2"><span>Plugins</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li>
+                    <a href="admin_loader.php%3Fplugin=AMP_Example.php.html"
+                      >Example</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <h2>Recurring Invoices</h2>
+            <div id="description" class="box">
+              <div class="inbox">
+                <p>
+                  "Recurrings" are on-going billing subscriptions. Such as
+                  SPOON's monthly hosting plans or annual domain renewals.
+                </p>
+                <p>
+                  <a
+                    href="admin_recurring.php%3Faction=pause&amp;recurrings_id=1\.html#"
+                    >New reccuring invoice</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="recurrings" class="blocktable">
+            <div class="box">
+              <div class="inbox">
+                <table cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th class="tcl" scope="col">Domain</th>
+                      <th class="tc2" scope="col">Type</th>
+                      <th class="tc3" scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tcl">spoon.spoon.net.nz</td>
+                      <td class="tc2">Hosting</td>
+                      <td class="tc3">
+                        <a
+                          href="admin_recurring.php%3Faction=pause&amp;recurrings_id=1\.html"
+                          >Pause</a
+                        >
+                        -
+                        <a
+                          href="admin_recurring.php%3Faction=edit&amp;recurrings_id=1\.html"
+                          >Edit</a
+                        >
+                        -
+                        <a
+                          href="invoice.php%3Faction=delete&amp;recurring_id=1&amp;id=2.html"
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="brdfooter" class="block">
+          <h2><span>Board footer</span></h2>
+          <div class="box">
+            <div class="inbox">
+              <p class="conr">
+                Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy;
+                Copyright 2002&#8211;2005 Rickard Andersson
+              </p>
+              <p class="conr">
+                [ Generated in 0.007 seconds, 6 queries executed ]
+              </p>
+              <div class="clearer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

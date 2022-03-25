@@ -43,7 +43,7 @@ CREATE TABLE `recurrings` (
   user_id int,
   account_id int,
   domain varchar(255),
-  `type` int DEFAULT '1'
-  active int DEFAULT 1,
+  `type` int DEFAULT '1',
+  active int DEFAULT '1',
   PRIMARY KEY (`id`)
 );

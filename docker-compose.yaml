@@ -1,0 +1,27 @@
+version: "3.3"
+services:
+  spoon:
+    image: php:5.6-apache
+    container_name: spoon
+    entrypoint: "sh -c 'docker-php-ext-install mysqli && apache2-foreground'"
+    depends_on:
+      - db
+    ports:
+      - "8787:80"
+    volumes:
+      - "./forum:/var/www/html"
+    environment:
+      PUID: 995
+      PGID: 995
+  db:
+    image: mysql:5.6
+    container_name: spoon-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=true
+      - MYSQL_DATABASE=spoon_site
+      - MYSQL_USER=spoon_site
+      - MYSQL_PASSWORD=********
+    volumes:
+      - "./sql:/docker-entrypoint-initdb.d"

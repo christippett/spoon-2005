@@ -2,46 +2,102 @@
 /* 1. INITIAL SETTINGS */
 /****************************************************************/
 
-.pun TABLE, .pun DIV, .pun FORM, .pun P, .pun H1, .pun H2, .pun H3,
-.pun H4, .pun PRE, .pun BLOCKQUOTE, .pun UL, .pun OL, .pun LI, .pun DL,
-.pun DT, .pun DD, .pun TH, .pun TD, #invoice TD, .pun FIELDSET, .pun IMG {
-	MARGIN: 0px;
-	PADDING: 0px;
-	FONT-WEIGHT: normal;
-	LIST-STYLE: none;
+.pun TABLE,
+.pun DIV,
+.pun FORM,
+.pun P,
+.pun H1,
+.pun H2,
+.pun H3,
+.pun H4,
+.pun PRE,
+.pun BLOCKQUOTE,
+.pun UL,
+.pun OL,
+.pun LI,
+.pun DL,
+.pun DT,
+.pun DD,
+.pun TH,
+.pun TD,
+#invoice TD,
+.pun FIELDSET,
+.pun IMG {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+  list-style: none;
 }
-#profile .block2, #news .block2 {MARGIN-TOP: 12px}
-#profile #intro, #news .block2{PADDING: 5px}
+#profile .block2,
+#news .block2 {
+  margin-top: 12px;
+}
+#profile #intro,
+#news .block2 {
+  padding: 5px;
+}
 
-#description DD {MARGIN-LEFT: 14em; PADDING: 3px; MARGIN-BOTTOM: 3px; LINE-HEIGHT: 1.5em}
-#description DT {FLOAT:left; WIDTH: 13em; PADDING: 3px; line-height: 1.5em}
-#description {PADDING: 10px 10px 5px 10px}
-#description DL {PADDING: 3px 0 5px 5px}
+#description DD {
+  margin-left: 14em;
+  padding: 3px;
+  margin-bottom: 3px;
+  line-height: 1.5em;
+}
+#description DT {
+  float: left;
+  width: 13em;
+  padding: 3px;
+  line-height: 1.5em;
+}
+#description {
+  padding: 10px 10px 5px 10px;
+}
+#description DL {
+  padding: 3px 0 5px 5px;
+}
 
+.pun IMG {
+  border: none;
+}
 
-.pun IMG {BORDER: none}
-
-.pun INPUT, .pun SELECT, .pun TEXTAREA, .pun OPTGROUP {MARGIN: 0}
+.pun INPUT,
+.pun SELECT,
+.pun TEXTAREA,
+.pun OPTGROUP {
+  margin: 0;
+}
 
 /****************************************************************/
 /* 2. STRUCTURAL SETTINGS - VERY IMPORTANT - DO NOT CHANGE */
 /****************************************************************/
 
 /* 2.1 Clearing floats and invisible items */
-.pun .clearer, .pun .nosize {
-	HEIGHT: 0px;
-	WIDTH: 0px;
-	LINE-HEIGHT: 0px;
-	FONT-SIZE: 0px;
-	OVERFLOW: hidden;
+.pun .clearer,
+.pun .nosize {
+  height: 0px;
+  width: 0px;
+  line-height: 0px;
+  font-size: 0px;
+  overflow: hidden;
 }
 
-.pun .clearer, .pun .clearb {CLEAR: both}
-.pun .nosize {POSITION: absolute; LEFT: -10000px}
+.pun .clearer,
+.pun .clearb {
+  clear: both;
+}
+.pun .nosize {
+  position: absolute;
+  left: -10000px;
+}
 
 /* 2.2 Overflow settings for posts */
 
-DIV.blockpost DIV.box, DIV.postleft, DIV.postsignature, DIV.postmsg {OVERFLOW: hidden}
+DIV.blockpost DIV.box,
+DIV.postleft,
+DIV.postsignature,
+DIV.postmsg {
+  overflow: hidden;
+}
 
 /****************************************************************/
 /* 3. BUG FIXES - VERY IMPORTANT - DO NOT CHANGE */
@@ -49,13 +105,25 @@ DIV.blockpost DIV.box, DIV.postleft, DIV.postsignature, DIV.postmsg {OVERFLOW: h
 
 /* 3.1 This attempts to eliminate rounding errors in Gecko browsers. */
 
-DIV>DIV>DIV.postfootleft, DIV>DIV>DIV.postfootright {PADDING-TOP: 1px; MARGIN-TOP: -1px}
+DIV > DIV > DIV.postfootleft,
+DIV > DIV > DIV.postfootright {
+  padding-top: 1px;
+  margin-top: -1px;
+}
 
 /* 3.2 This is only visible to IE Windows and cures various bugs. Do not alter comments */
 
 /* Begin IEWin Fix \*/
-* HTML .inbox, * HTML .inform, * HTML .pun, * HTML .intd, * HTML .tclcon {HEIGHT: 1px}
-* HTML .inbox DIV.postmsg {WIDTH: 98%}
+* HTML .inbox,
+* HTML .inform,
+* HTML .pun,
+* HTML .intd,
+* HTML .tclcon {
+  height: 1px;
+}
+* HTML .inbox DIV.postmsg {
+  width: 98%;
+}
 /* End of IEWin Fix */
 
 /****************************************************************/
@@ -64,70 +132,99 @@ DIV>DIV>DIV.postfootleft, DIV>DIV>DIV.postfootright {PADDING-TOP: 1px; MARGIN-TO
 
 /* These are hidden in normal display. Add comments to make them visible */
 
-#brdfooter H2, #brdstats H2, #brdstats .conl DT, #brdstats .conr DT,
-#modcontrols DT, #searchlinks DT, DIV.postright H3 {
-	POSITION: absolute;
-	DISPLAY: block;
-	OVERFLOW: hidden;
-	WIDTH: 1em;
-	LEFT: -999em
+#brdfooter H2,
+#brdstats H2,
+#brdstats .conl DT,
+#brdstats .conr DT,
+#modcontrols DT,
+#searchlinks DT,
+DIV.postright H3 {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 1em;
+  left: -999em;
 }
 
 /****************************************************************/
 /* 5. BOX CONTAINERS AND FLOATS */
 /****************************************************************/
 
-/* 5.1. Setup all left and right content using floats. */  
+/* 5.1. Setup all left and right content using floats. */
 
 .conr {
-	FLOAT: right;
-	TEXT-ALIGN: right;
-	CLEAR: right;
-	WIDTH: 40%
+  float: right;
+  text-align: right;
+  clear: right;
+  width: 40%;
 }
 
 .conl {
-	FLOAT: left;
-	WIDTH: 55%;
-	OVERFLOW: hidden;
-	WHITE-SPACE: nowrap
+  float: left;
+  width: 55%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 LABEL.conl {
-	WIDTH: auto;
-	OVERFLOW: visible;
-	MARGIN-RIGHT: 10px
+  width: auto;
+  overflow: visible;
+  margin-right: 10px;
 }
 
 /* 5.2 Set up page numbering and posts links */
 
-DIV.linkst .conl, DIV.linksb .conl, DIV.postlinksb .conl {WIDTH:18em}
+DIV.linkst .conl,
+DIV.linksb .conl,
+DIV.postlinksb .conl {
+  width: 18em;
+}
 
-DIV.linkst .conr, DIV.linksb .conr, DIV.postlinksb .conr {WIDTH:16em}
+DIV.linkst .conr,
+DIV.linksb .conr,
+DIV.postlinksb .conr {
+  width: 16em;
+}
 
-FORM DIV.linksb .conr {WIDTH: 32em}
+FORM DIV.linksb .conr {
+  width: 32em;
+}
 
 /* 5.3 Keep breadcrumbs from shifting to the right when wrapping */
 
-.linkst UL, linksb UL, .postlinksb UL {}
+.linkst UL,
+linksb UL,
+.postlinksb UL {
+}
 
 /* 5.4 Settings for Profile and Admin interface.*/
 
-DIV.block2col {PADDING-BOTTOM: 1px}
+DIV.block2col {
+  padding-bottom: 1px;
+}
 
-DIV.block2col DIV.blockform, DIV.block2col DIV.block, #viewprofile DD {MARGIN-LEFT: 14em}
+DIV.block2col DIV.blockform,
+DIV.block2col DIV.block,
+#viewprofile DD {
+  margin-left: 14em;
+}
 
-DIV.blockmenu, #viewprofile DT {
-	FLOAT:left;
-	WIDTH: 13em
+DIV.blockmenu,
+#viewprofile DT {
+  float: left;
+  width: 13em;
 }
 
 #profileavatar IMG {
-	FLOAT: right;
-	MARGIN-LEFT: 1em
+  float: right;
+  margin-left: 1em;
 }
 
-#viewprofile DL {FLOAT: left; WIDTH: 100%; OVERFLOW: hidden}
+#viewprofile DL {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
 
 /****************************************************************/
 /* 6. TABLE SETUP */
@@ -135,71 +232,171 @@ DIV.blockmenu, #viewprofile DT {
 
 /* 6.1 Table Basic Setup */
 
-.pun TABLE {WIDTH: 100%}
+.pun TABLE {
+  width: 100%;
+}
 
 /* 6.2 Fixed Table Setup */
 
-#punindex TABLE, #vf TABLE {TABLE-LAYOUT: fixed}
-
-.tcl {TEXT-ALIGN: left; WIDTH: 50%; vertical-align: top; background-color: #fbfbfb;}
-
-.tc2, .tc3, .tc4, .tcmod {WIDTH: 9%; TEXT-ALIGN: center; background-color: #fbfbfb;}
-
-.tcr {WIDTH: 32%; TEXT-ALIGN: left; background-color: #fbfbfb;}
-#invoice .tcs { width: 100%; text-align: right }
-#invoice .tcl { width: 30%; font-weight: bold}
-#invoice .tc2 { width: 30%; text-align: left; font-weight: bold}
-#invoice .tc3 { width: 40%; text-align: left}
-#admin_invoice .tcl { width: 30%; font-weight: normal}
-#admin_invoice .tc2 { width: 30%; text-align: left; font-weight: normal}
-#admin_invoice .tc3 { width: 40%; text-align: left}
-
-#listinvoice .tcl { width: 15%; text-align: left }
-#listinvoice .tc2 {width: 35%; text-align: left }
-#listinvoice .tc3 { width: 15%; text-align: left }
-#listinvoice .tc4 { width: 35%; text-align: left }
-
-#accept .inbox {text-align: right; padding-top: 6px; padding-bottom: 6px}
-.block .tcl {vertical-align: middle}
-
-#plantable .tcl { WIDTH: 49%; font-weight: bold;}
-#plantable .tc2, #plantable .tc3, #plantable .tc4 { WIDTH: 17% }
-#planorder .tcl { 
-WIDTH: 49%;
-background-color: #0F5499;
-background-image: url(http://localhost:8787/images/forums/navbg.gif);
-background-repeat: repeat-x;
-background-position: top;
+#punindex TABLE,
+#vf TABLE {
+  table-layout: fixed;
 }
-#planorder .tc2, #planorder .tc3, #planorder .tc4 { 
-width: 17%;
-background-color: #0F5499;
-background-image: url(http://localhost:8787/images/forums/navbg.gif);
-background-repeat: repeat-x;
-background-position: top;
-color: #ffffff;
-font-weight: normal;
+
+.tcl {
+  text-align: left;
+  width: 50%;
+  vertical-align: top;
+  background-color: #fbfbfb;
 }
-#planorder A:link, #planorder A:visited { color: #ffffff; text-decoration: none; }
-#planorder A:hover { text-decoration: underline; }
 
+.tc2,
+.tc3,
+.tc4,
+.tcmod {
+  width: 9%;
+  text-align: center;
+  background-color: #fbfbfb;
+}
 
-#punsearch #vf .tcl, #punmoderate #vf .tcl {WIDTH: 41%}
+.tcr {
+  width: 32%;
+  text-align: left;
+  background-color: #fbfbfb;
+}
+#invoice .tcs {
+  width: 100%;
+  text-align: right;
+}
+#invoice .tcl {
+  width: 30%;
+  font-weight: bold;
+}
+#invoice .tc2 {
+  width: 30%;
+  text-align: left;
+  font-weight: bold;
+}
+#invoice .tc3 {
+  width: 40%;
+  text-align: left;
+}
+#admin_invoice .tcl {
+  width: 30%;
+  font-weight: normal;
+}
+#admin_invoice .tc2 {
+  width: 30%;
+  text-align: left;
+  font-weight: normal;
+}
+#admin_invoice .tc3 {
+  width: 40%;
+  text-align: left;
+}
 
-#punsearch #vf .tc2 {WIDTH: 18%; TEXT-ALIGN: left}
+#listinvoice .tcl {
+  width: 15%;
+  text-align: left;
+}
+#listinvoice .tc2 {
+  width: 35%;
+  text-align: left;
+}
+#listinvoice .tc3 {
+  width: 15%;
+  text-align: left;
+}
+#listinvoice .tc4 {
+  width: 35%;
+  text-align: left;
+}
 
-.tcl, .tcr {OVERFLOW: HIDDEN}
+#accept .inbox {
+  text-align: right;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.block .tcl {
+  vertical-align: middle;
+}
+
+#plantable .tcl {
+  width: 49%;
+  font-weight: bold;
+}
+#plantable .tc2,
+#plantable .tc3,
+#plantable .tc4 {
+  width: 17%;
+}
+#planorder .tcl {
+  width: 49%;
+  background-color: #0f5499;
+  background-image: url(https://spoon.christippett.devimages/forums/navbg.gif);
+  background-repeat: repeat-x;
+  background-position: top;
+}
+#planorder .tc2,
+#planorder .tc3,
+#planorder .tc4 {
+  width: 17%;
+  background-color: #0f5499;
+  background-image: url(https://spoon.christippett.devimages/forums/navbg.gif);
+  background-repeat: repeat-x;
+  background-position: top;
+  color: #ffffff;
+  font-weight: normal;
+}
+#planorder A:link,
+#planorder A:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+#planorder A:hover {
+  text-decoration: underline;
+}
+
+#punsearch #vf .tcl,
+#punmoderate #vf .tcl {
+  width: 41%;
+}
+
+#punsearch #vf .tc2 {
+  width: 18%;
+  text-align: left;
+}
+
+.tcl,
+.tcr {
+  overflow: HIDDEN;
+}
 
 /* 6.3 Other Table Setup */
 
-#users1 .tcl {WIDTH: 40%}
-#users1 .tcr {WIDTH: 25%}
-#users1 .tc2 {WIDTH: 25%; TEXT-ALIGN: left}
-#users1 .tc3 {WIDTH: 10%; TEXT-ALIGN: center}
+#users1 .tcl {
+  width: 40%;
+}
+#users1 .tcr {
+  width: 25%;
+}
+#users1 .tc2 {
+  width: 25%;
+  text-align: left;
+}
+#users1 .tc3 {
+  width: 10%;
+  text-align: center;
+}
 
-#debug .tcr {WIDTH: 85%; WHITE-SPACE: normal}
+#debug .tcr {
+  width: 85%;
+  white-space: normal;
+}
 
-#punindex TD.tcr SPAN.byuser {DISPLAY: block}
+#punindex TD.tcr SPAN.byuser {
+  display: block;
+}
 
 /****************************************************************/
 /* 7. VIEWTOPIC SETUP */
@@ -208,59 +405,88 @@ font-weight: normal;
 /* 7.1 This is the basic structure. */
 
 DIV.postleft {
-	WIDTH: 100%;
-	padding-bottom: 4px;
-	OVERFLOW: hidden;
-	border-bottom: 1px solid #E4E4E4;
+  width: 100%;
+  padding-bottom: 4px;
+  overflow: hidden;
+  border-bottom: 1px solid #e4e4e4;
 }
 DIV.postfootleft {
-float: left;
-border-top: 1px solid #E4E4E4;
+  float: left;
+  border-top: 1px solid #e4e4e4;
 }
-/*	
+/*
 DIV.postright, DIV.postfootright {
 	BORDER-LEFT-WIDTH: 18em;
 	BORDER-LEFT-STYLE: solid
 }
 */
-DIV.postfootright, DIV.postedby, P.multidelete {TEXT-ALIGN: right; border-top: 1px solid #E4E4E4;}
-DIV.username {TEXT-ALIGN: left; }
+DIV.postfootright,
+DIV.postedby,
+P.multidelete {
+  text-align: right;
+  border-top: 1px solid #e4e4e4;
+}
+DIV.username {
+  text-align: left;
+}
 
-DIV.blockpost>DIV>DIV.inbox {PADDING-BOTTOM: 1px}
+DIV.blockpost > DIV > DIV.inbox {
+  padding-bottom: 1px;
+}
 
 /* 7.3 This is the div which actually contains the post and is inside .postright */
 
-DIV.postmsg {WIDTH:100%}
+DIV.postmsg {
+  width: 100%;
+}
 
 /* 7.4 These items control overflow and scrolling within posts. */
 
-DIV.incqbox {WIDTH: 100%; OVERFLOW: hidden}
-DIV.scrollbox {WIDTH: 100%; OVERFLOW: auto}
-IMG.postimg {max-width: 100%}
-A .postimg {max-width: 100%}
+DIV.incqbox {
+  width: 100%;
+  overflow: hidden;
+}
+DIV.scrollbox {
+  width: 100%;
+  overflow: auto;
+}
+IMG.postimg {
+  max-width: 100%;
+}
+A .postimg {
+  max-width: 100%;
+}
 
 /* 7.5 Turn off the poster information column for preview */
 
-#postpreview DIV.postright {BORDER-LEFT: none}
+#postpreview DIV.postright {
+  border-left: none;
+}
 
 /* 7.6 Create the horizontal line above signatures */
 
 DIV.postsignature HR {
-	MARGIN-LEFT: 0px;
-	WIDTH: 200px;
-	TEXT-ALIGN: left;
-	HEIGHT: 1px;
-	BORDER:none
+  margin-left: 0px;
+  width: 200px;
+  text-align: left;
+  height: 1px;
+  border: none;
 }
 
 /* 7.7 Maximum height for search results as posts. Position go to post link */
 
-DIV.searchposts DIV.postmsg {HEIGHT: 8em}
-DIV.searchposts DD P {PADDING-TOP: 3em}
+DIV.searchposts DIV.postmsg {
+  height: 8em;
+}
+DIV.searchposts DD P {
+  padding-top: 3em;
+}
 
 /* 7.8 Class for bbcode [u] */
 
-SPAN.bbu {TEXT-DECORATION: underline}
+SPAN.bbu {
+  text-decoration: underline;
+}
 
 /****************************************************************/
 /* 8. LISTS SPECIAL SETTINGS */
@@ -268,19 +494,29 @@ SPAN.bbu {TEXT-DECORATION: underline}
 
 /* 8.1 Horizontal display of online list, main navigation menu and breadcrumbs */
 
-#onlinelist DD, #onlinelist DT, #brdmenu LI, DIV.linkst LI, DIV.linksb LI, DIV.postlinksb LI,
-DIV.postfootright LI, UL.bblinks LI {
-	DISPLAY: inline;
-	HEIGHT: 0
+#onlinelist DD,
+#onlinelist DT,
+#brdmenu LI,
+DIV.linkst LI,
+DIV.linksb LI,
+DIV.postlinksb LI,
+DIV.postfootright LI,
+UL.bblinks LI {
+  display: inline;
+  height: 0;
 }
 
 /* 8.2 Turn on square icon for posterror list */
 
-#posterror UL LI {LIST-STYLE: square inside}
+#posterror UL LI {
+  list-style: square inside;
+}
 
 /* 8.3 Right alignment of descriptions in ordinary member view of other members profiles */
 
-#viewprofile DT {TEXT-ALIGN: right}
+#viewprofile DT {
+  text-align: right;
+}
 
 /****************************************************************/
 /* 9. FORM SETTINGS */
@@ -288,13 +524,22 @@ DIV.postfootright LI, UL.bblinks LI {
 
 /* 9.1 Makes textareas and long text inputs shrink with page */
 
-DIV.txtarea {WIDTH: 100%}
+DIV.txtarea {
+  width: 100%;
+}
 
-DIV.txtarea TEXTAREA, INPUT.longinput {WIDTH: 100%;}
+DIV.txtarea TEXTAREA,
+INPUT.longinput {
+  width: 100%;
+}
 
-.pun LABEL {DISPLAY: block}
+.pun LABEL {
+  display: block;
+}
 
-#qjump SELECT {WIDTH: 50%}
+#qjump SELECT {
+  width: 50%;
+}
 
 /****************************************************************/
 /* 10. HELP FILES AND MISC. */
@@ -302,12 +547,19 @@ DIV.txtarea TEXTAREA, INPUT.longinput {WIDTH: 100%;}
 
 /* 10.1 Put some space between sections of the help file */
 
-#helpfile H2 {MARGIN-TOP: 12px}
+#helpfile H2 {
+  margin-top: 12px;
+}
 
 /* 10.2 Internal padding */
 
-#helpfile DIV.box {PADDING: 10px}
+#helpfile DIV.box {
+  padding: 10px;
+}
 
 /* 10.3 Other templates */
 
-#punredirect DIV.block, #punmaint DIV.block {MARGIN: 50px 20% 12px 20%}
+#punredirect DIV.block,
+#punmaint DIV.block {
+  margin: 50px 20% 12px 20%;
+}

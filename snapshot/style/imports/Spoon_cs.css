@@ -7,7 +7,7 @@
 BODY {
   background-color: #ce2424;
   margin-left: 140px;
-  background-image: url(https://spoon.christippett.devimages/forums/pagebg.gif);
+  background-image: url(https://spoon.christippett.dev/images/forums/pagebg.gif);
   background-repeat: repeat-y;
 }
 img {
@@ -56,7 +56,7 @@ DIV.blockmenu DIV.box,
 /* 1.3 Main headers and navigation bar background and text colour */
 H2 {
   color: #000000;
-  background-image: url(https://spoon.christippett.devimages/forums/barbg.gif);
+  background-image: url(https://spoon.christippett.dev/images/forums/barbg.gif);
   background-repeat: repeat-x;
   background-position: top;
   font-weight: bold;
@@ -80,7 +80,7 @@ H2 {
 }
 /* nav bar */
 #brdmenu {
-  background-image: url(https://spoon.christippett.devimages/forums/navbg.gif);
+  background-image: url(https://spoon.christippett.dev/images/forums/navbg.gif);
   background-repeat: repeat-x;
   background-position: top;
   border-top: 1px solid #333333;
@@ -95,7 +95,7 @@ H2 {
 
 .pun TH,
 .bgc4 {
-  background-image: url(https://spoon.christippett.devimages/forums/barbg.gif);
+  background-image: url(https://spoon.christippett.dev/images/forums/barbg.gif);
   background-repeat: repeat-x;
   background-position: top;
   border: 0px;
@@ -303,7 +303,7 @@ DIV.postedby .comments {
   text-decoration: underline;
 }
 #plans span.plans {
-  background-image: url(https://spoon.christippett.devimages/point.gif);
+  background-image: url(https://spoon.christippett.dev/images/point.gif);
   background-repeat: no-repeat;
   padding-left: 20px;
   height: 14px;

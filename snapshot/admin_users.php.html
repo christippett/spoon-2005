@@ -1,260 +1,480 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html dir="ltr">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="ROBOTS" content="NOINDEX, FOLLOW" />
-<link rel="icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
-<title>SPOON.net.nz / Admin / Users</title>
-<link rel="stylesheet" type="text/css" href="style/Spoon.css" />
-<link rel="stylesheet" type="text/css" href="style/imports/base_admin.css" />
-<meta name="keywords" content="spoon, hosting, free, direct admin, installatron, new zealand" />
-<meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
-</head>
-<body onload="document.getElementById('find_user').username.focus()">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="ROBOTS" content="NOINDEX, FOLLOW" />
+    <link
+      rel="icon"
+      href="https://spoon.christippett.devfavicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>SPOON.net.nz / Admin / Users</title>
+    <link rel="stylesheet" type="text/css" href="style/Spoon.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/imports/base_admin.css"
+    />
+    <meta
+      name="keywords"
+      content="spoon, hosting, free, direct admin, installatron, new zealand"
+    />
+    <meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
+  </head>
+  <body onload="document.getElementById('find_user').username.focus()">
+    <div id="punwrap">
+      <div id="punadmin" class="pun">
+        <div id="brdheader" class="block">
+          <div class="box">
+            <div id="headerimg">
+              <img src="images/top.gif" alt="SPOON.net.nz" />
+            </div>
+            <div id="brdmenu" class="inbox">
+              <ul>
+                <li id="navindex"><a href="index.php.html">Index</a></li>
+                <li id="navforums"><a href="forum.php.html">Forums</a></li>
+                <li id="navsearch"><a href="search.php.html">Search</a></li>
+                <li id="navprofile">
+                  <a href="profile.php%3Fid=2.html">Profile</a>
+                </li>
+                <li id="navadmin">
+                  <a href="admin_index.php.html">Administration</a>
+                </li>
+                <li id="navlogout">
+                  <a href="login.php%3Faction=out&amp;id=2.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+            <div id="brdwelcome" class="inbox">
+              <ul class="conl">
+                <li>Logged in as <strong>spoon</strong></li>
+                <li>Last visit: Today 07:36:09</li>
+              </ul>
+              <div class="clearer"></div>
+            </div>
+          </div>
+        </div>
 
-<div id="punwrap">
-<div id="punadmin" class="pun">
+        <div id="adminconsole">
+          <div id="adminmenu" class="blockmenu">
+            <h2><span>Admin menu</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li><a href="admin_index.php.html">Index</a></li>
 
-<div id="brdheader" class="block">
-	<div class="box">
-		<div id="headerimg"><img src="images/top.gif" alt="SPOON.net.nz" /></div>
-		<div id="brdmenu" class="inbox">
-			<ul>
-				<li id="navindex"><a href="index.php.html">Index</a></li>
-				<li id="navforums"><a href="forum.php.html">Forums</a></li>
-				<li id="navsearch"><a href="search.php.html">Search</a></li>
-				<li id="navprofile"><a href="profile.php%3Fid=2.html">Profile</a></li>
-				<li id="navadmin"><a href="admin_index.php.html">Administration</a></li>
-				<li id="navlogout"><a href="login.php%3Faction=out&amp;id=2.html">Logout</a></li>
-			</ul>
-		</div>
-		<div id="brdwelcome" class="inbox">
-			<ul class="conl">
-				<li>Logged in as <strong>spoon</strong></li>
-				<li>Last visit: Today 07:36:09</li>
-			</ul>
-			<div class="clearer"></div>
-		</div>
-	</div>
-</div>
+                  <li><a href="admin_categories.php.html">Categories</a></li>
 
+                  <li><a href="admin_forums.php.html">Forums</a></li>
 
+                  <li class="isactive">
+                    <a href="admin_users.php.html">Users</a>
+                  </li>
 
-<div id="adminconsole">
-	<div id="adminmenu" class="blockmenu">
-		<h2><span>Admin menu</span></h2>
-		<div class="box">
-			<div class="inbox">
-				<ul>
-					<li><a href="admin_index.php.html">Index</a></li>
-	
-					<li><a href="admin_categories.php.html">Categories</a></li>
-	
-					<li><a href="admin_forums.php.html">Forums</a></li>
-				
-					<li class="isactive"><a href="admin_users.php.html">Users</a></li>
-	
-					<li><a href="admin_groups.php.html">User groups</a></li>
-	
-					<li><a href="admin_options.php.html">Options</a></li>
-	
-					<li><a href="admin_permissions.php.html">Permissions</a></li>
-					<li><a href="admin_censoring.php.html">Censoring</a></li>
-	
-					<li><a href="admin_ranks.php.html">Ranks</a></li>
-					<li><a href="admin_bans.php.html">Bans</a></li>
-	
-					<li><a href="admin_prune.php.html">Prune</a></li>
-	
-					<li><a href="admin_maintenance.php.html">Maintenance</a></li>
-					<li><a href="admin_reports.php.html">Reports</a></li>		
-				</ul>
-			</div>
-		</div>
-		<h2 class="block2"><span>SPOON menu</span></h2>
-		<div class="box">
-			<div class="inbox">
-				<ul>
-	
-					<li><a href="admin_free.php.html">SPOON Free</a></li>
-		
-	
-					<li><a href="admin_recurring.php.html">Recurring</a></li>
-				
-		
-				</ul>
-			</div>
-		</div>
-		<h2 class="block2"><span>Plugins</span></h2>
-		<div class="box">
-			<div class="inbox">
-				<ul>
-					<li><a href="admin_loader.php%3Fplugin=AMP_Example.php.html">Example</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+                  <li><a href="admin_groups.php.html">User groups</a></li>
 
-	<div class="blockform">
-		<h2><span>User search</span></h2>
-		<div class="box">
-			<form id="find_user" method="post" action="http://localhost:8787/admin_users.php?action=find_user">
-				<p class="submittop"><input type="submit" name="find_user" value="Submit search" tabindex="1" /></p>
-				<div class="inform">
-					<fieldset>
-						<legend>Enter search criteria</legend>
-						<div class="infldset">
-							<p>Search for users in the database. You can enter one or more terms to search for. Wildcards in the form of asterisks (*) are accepted.</p>
-							<table  class="aligntop" cellspacing="0">
-								<tr>
-									<th scope="row">Username</th>
-									<td><input type="text" name="username" size="25" maxlength="25" tabindex="2" /></td>
-								</tr>
-								<tr>
-									<th scope="row">E-mail address</th>
-									<td><input type="text" name="form[email]" size="30" maxlength="50" tabindex="3" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Title</th>
-									<td><input type="text" name="form[title]" size="30" maxlength="50" tabindex="4" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Real name</th>
-									<td><input type="text" name="form[realname]" size="30" maxlength="40" tabindex="5" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Website</th>
-									<td><input type="text" name="form[url]" size="35" maxlength="100" tabindex="6" /></td>
-								</tr>
-								<tr>
-									<th scope="row">ICQ</th>
-									<td><input type="text" name="form[icq]" size="12" maxlength="12" tabindex="7" /></td>
-								</tr>
-								<tr>
-									<th scope="row">MSN Messenger</th>
-									<td><input type="text" name="form[msn]" size="30" maxlength="50" tabindex="8" /></td>
-								</tr>
-								<tr>
-									<th scope="row">AOL IM</th>
-									<td><input type="text" name="form[aim]" size="20" maxlength="20" tabindex="9" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Yahoo! Messenger</th>
-									<td><input type="text" name="form[yahoo]" size="20" maxlength="20" tabindex="10" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Location</th>
-									<td><input type="text" name="form[location]" size="30" maxlength="30" tabindex="11" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Signature</th>
-									<td><input type="text" name="form[signature]" size="35" maxlength="512" tabindex="12" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Admin note</th>
-									<td><input type="text" name="form[admin_note]" size="30" maxlength="30" tabindex="13" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Number of posts greater than</th>
-									<td><input type="text" name="posts_greater" size="5" maxlength="8" tabindex="14" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Number of posts less than</th>
-									<td><input type="text" name="posts_less" size="5" maxlength="8" tabindex="15" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Last post is after</th>
-									<td><input type="text" name="last_post_after" size="24" maxlength="19" tabindex="16" />
-									<span>(yyyy-mm-dd hh:mm:ss)</span></td>
-								</tr>
-								<tr>
-									<th scope="row">Last post is before</th>
-									<td><input type="text" name="last_post_before" size="24" maxlength="19" tabindex="17" />
-									<span>(yyyy-mm-dd hh:mm:ss)</span></td>
-								</tr>
-								<tr>
-									<th scope="row">Registered after</th>
-									<td><input type="text" name="registered_after" size="24" maxlength="19" tabindex="18" />
-									<span>(yyyy-mm-dd hh:mm:ss)</span></td>
-								</tr>
-								<tr>
-									<th scope="row">Registered before</th>
-									<td><input type="text" name="registered_before" size="24" maxlength="19" tabindex="19" />
-									<span>(yyyy-mm-dd hh:mm:ss)</span></td>
-								</tr>
-								<tr>
-									<th scope="row">Order by</th>
-									<td>
-										<select name="order_by" tabindex="20">
-											<option value="username" selected="selected">username</option>
-											<option value="email">e-mail</option>
-											<option value="num_posts">posts</option>
-											<option value="last_post">last post</option>
-											<option value="registered">registered</option>
-										</select>&nbsp;&nbsp;&nbsp;<select name="direction" tabindex="21">
-											<option value="ASC" selected="selected">ascending</option>
-											<option value="DESC">descending</option>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">User group</th>
-									<td>
-										<select name="user_group" tabindex="22">
-												<option value="all" selected="selected">All groups</option>
-											<option value="1">Administrators</option>
-											<option value="4">Members</option>
-											<option value="2">Moderators</option>
-											<option value="5">SPOON</option>
-										</select>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</fieldset>
-				</div>
-				<p class="submitend"><input type="submit" name="find_user" value="Submit search" tabindex="23" /></p>
-			</form>
-		</div>
+                  <li><a href="admin_options.php.html">Options</a></li>
 
-		<h2 class="block2"><span>IP search</span></h2>
-		<div class="box">
-			<form method="get" action="admin_users.php.html">
-				<div class="inform">
-					<fieldset>
-						<legend>Enter IP to search for</legend>
-						<div class="infldset">
-							<table class="aligntop" cellspacing="0">
-								<tr>
-									<th scope="row">IP address<div><input type="submit" value=" Find " tabindex="25" /></div></th>
-									<td><input type="text" name="show_users" size="18" maxlength="15" tabindex="24" />
-									<span>The IP address to search for in the post database.</span></td>
-								</tr>
-							</table>
-						</div>
-					</fieldset>
-				</div>
-			</form>
-		</div>
-	</div>
-	<div class="clearer"></div>
-</div>
+                  <li><a href="admin_permissions.php.html">Permissions</a></li>
+                  <li><a href="admin_censoring.php.html">Censoring</a></li>
 
-<div id="brdfooter" class="block">
-	<h2><span>Board footer</span></h2>
-	<div class="box">
-		<div class="inbox">
-			<p class="conr">Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
-			<p class="conr">[ Generated in 0.007 seconds, 6 queries executed ]</p>
-			<div class="clearer"></div>
-		</div>
-	</div>
-</div>
+                  <li><a href="admin_ranks.php.html">Ranks</a></li>
+                  <li><a href="admin_bans.php.html">Bans</a></li>
 
-</div>
-</div>
+                  <li><a href="admin_prune.php.html">Prune</a></li>
 
-</body>
+                  <li><a href="admin_maintenance.php.html">Maintenance</a></li>
+                  <li><a href="admin_reports.php.html">Reports</a></li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="block2"><span>SPOON menu</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li><a href="admin_free.php.html">SPOON Free</a></li>
+
+                  <li><a href="admin_recurring.php.html">Recurring</a></li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="block2"><span>Plugins</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li>
+                    <a href="admin_loader.php%3Fplugin=AMP_Example.php.html"
+                      >Example</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="blockform">
+            <h2><span>User search</span></h2>
+            <div class="box">
+              <form
+                id="find_user"
+                method="post"
+                action="https://spoon.christippett.devadmin_users.php?action=find_user"
+              >
+                <p class="submittop">
+                  <input
+                    type="submit"
+                    name="find_user"
+                    value="Submit search"
+                    tabindex="1"
+                  />
+                </p>
+                <div class="inform">
+                  <fieldset>
+                    <legend>Enter search criteria</legend>
+                    <div class="infldset">
+                      <p>
+                        Search for users in the database. You can enter one or
+                        more terms to search for. Wildcards in the form of
+                        asterisks (*) are accepted.
+                      </p>
+                      <table class="aligntop" cellspacing="0">
+                        <tr>
+                          <th scope="row">Username</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="username"
+                              size="25"
+                              maxlength="25"
+                              tabindex="2"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">E-mail address</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[email]"
+                              size="30"
+                              maxlength="50"
+                              tabindex="3"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Title</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[title]"
+                              size="30"
+                              maxlength="50"
+                              tabindex="4"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Real name</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[realname]"
+                              size="30"
+                              maxlength="40"
+                              tabindex="5"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Website</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[url]"
+                              size="35"
+                              maxlength="100"
+                              tabindex="6"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ICQ</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[icq]"
+                              size="12"
+                              maxlength="12"
+                              tabindex="7"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MSN Messenger</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[msn]"
+                              size="30"
+                              maxlength="50"
+                              tabindex="8"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">AOL IM</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[aim]"
+                              size="20"
+                              maxlength="20"
+                              tabindex="9"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Yahoo! Messenger</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[yahoo]"
+                              size="20"
+                              maxlength="20"
+                              tabindex="10"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Location</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[location]"
+                              size="30"
+                              maxlength="30"
+                              tabindex="11"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Signature</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[signature]"
+                              size="35"
+                              maxlength="512"
+                              tabindex="12"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Admin note</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="form[admin_note]"
+                              size="30"
+                              maxlength="30"
+                              tabindex="13"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Number of posts greater than</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="posts_greater"
+                              size="5"
+                              maxlength="8"
+                              tabindex="14"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Number of posts less than</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="posts_less"
+                              size="5"
+                              maxlength="8"
+                              tabindex="15"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Last post is after</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="last_post_after"
+                              size="24"
+                              maxlength="19"
+                              tabindex="16"
+                            />
+                            <span>(yyyy-mm-dd hh:mm:ss)</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Last post is before</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="last_post_before"
+                              size="24"
+                              maxlength="19"
+                              tabindex="17"
+                            />
+                            <span>(yyyy-mm-dd hh:mm:ss)</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Registered after</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="registered_after"
+                              size="24"
+                              maxlength="19"
+                              tabindex="18"
+                            />
+                            <span>(yyyy-mm-dd hh:mm:ss)</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Registered before</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="registered_before"
+                              size="24"
+                              maxlength="19"
+                              tabindex="19"
+                            />
+                            <span>(yyyy-mm-dd hh:mm:ss)</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Order by</th>
+                          <td>
+                            <select name="order_by" tabindex="20">
+                              <option value="username" selected="selected">
+                                username
+                              </option>
+                              <option value="email">e-mail</option>
+                              <option value="num_posts">posts</option>
+                              <option value="last_post">last post</option>
+                              <option value="registered">
+                                registered
+                              </option></select
+                            >&nbsp;&nbsp;&nbsp;<select
+                              name="direction"
+                              tabindex="21"
+                            >
+                              <option value="ASC" selected="selected">
+                                ascending
+                              </option>
+                              <option value="DESC">descending</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">User group</th>
+                          <td>
+                            <select name="user_group" tabindex="22">
+                              <option value="all" selected="selected">
+                                All groups
+                              </option>
+                              <option value="1">Administrators</option>
+                              <option value="4">Members</option>
+                              <option value="2">Moderators</option>
+                              <option value="5">SPOON</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div>
+                <p class="submitend">
+                  <input
+                    type="submit"
+                    name="find_user"
+                    value="Submit search"
+                    tabindex="23"
+                  />
+                </p>
+              </form>
+            </div>
+
+            <h2 class="block2"><span>IP search</span></h2>
+            <div class="box">
+              <form method="get" action="admin_users.php.html">
+                <div class="inform">
+                  <fieldset>
+                    <legend>Enter IP to search for</legend>
+                    <div class="infldset">
+                      <table class="aligntop" cellspacing="0">
+                        <tr>
+                          <th scope="row">
+                            IP address
+                            <div>
+                              <input
+                                type="submit"
+                                value=" Find "
+                                tabindex="25"
+                              />
+                            </div>
+                          </th>
+                          <td>
+                            <input
+                              type="text"
+                              name="show_users"
+                              size="18"
+                              maxlength="15"
+                              tabindex="24"
+                            />
+                            <span
+                              >The IP address to search for in the post
+                              database.</span
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="clearer"></div>
+        </div>
+
+        <div id="brdfooter" class="block">
+          <h2><span>Board footer</span></h2>
+          <div class="box">
+            <div class="inbox">
+              <p class="conr">
+                Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy;
+                Copyright 2002&#8211;2005 Rickard Andersson
+              </p>
+              <p class="conr">
+                [ Generated in 0.007 seconds, 6 queries executed ]
+              </p>
+              <div class="clearer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

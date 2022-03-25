@@ -1,248 +1,440 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html dir="ltr">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="ROBOTS" content="NOINDEX, FOLLOW" />
-<link rel="icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="http://localhost:8787/favicon.ico" type="image/x-icon" />
-<title>SPOON.net.nz / Admin / Forums</title>
-<link rel="stylesheet" type="text/css" href="style/Spoon.css" />
-<link rel="stylesheet" type="text/css" href="style/imports/base_admin.css" />
-<meta name="keywords" content="spoon, hosting, free, direct admin, installatron, new zealand" />
-<meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
-</head>
-<body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="ROBOTS" content="NOINDEX, FOLLOW" />
+    <link
+      rel="icon"
+      href="https://spoon.christippett.devfavicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>SPOON.net.nz / Admin / Forums</title>
+    <link rel="stylesheet" type="text/css" href="style/Spoon.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style/imports/base_admin.css"
+    />
+    <meta
+      name="keywords"
+      content="spoon, hosting, free, direct admin, installatron, new zealand"
+    />
+    <meta name="description" content="SPOON.net.nz http://www.spoon.net.nz" />
+  </head>
+  <body>
+    <div id="punwrap">
+      <div id="punadmin" class="pun">
+        <div id="brdheader" class="block">
+          <div class="box">
+            <div id="headerimg">
+              <img src="images/top.gif" alt="SPOON.net.nz" />
+            </div>
+            <div id="brdmenu" class="inbox">
+              <ul>
+                <li id="navindex"><a href="index.php.html">Index</a></li>
+                <li id="navforums"><a href="forum.php.html">Forums</a></li>
+                <li id="navsearch"><a href="search.php.html">Search</a></li>
+                <li id="navprofile">
+                  <a href="profile.php%3Fid=2.html">Profile</a>
+                </li>
+                <li id="navadmin">
+                  <a href="admin_index.php.html">Administration</a>
+                </li>
+                <li id="navlogout">
+                  <a href="login.php%3Faction=out&amp;id=2.html">Logout</a>
+                </li>
+              </ul>
+            </div>
+            <div id="brdwelcome" class="inbox">
+              <ul class="conl">
+                <li>Logged in as <strong>spoon</strong></li>
+                <li>Last visit: Today 07:36:09</li>
+              </ul>
+              <div class="clearer"></div>
+            </div>
+          </div>
+        </div>
 
-<div id="punwrap">
-<div id="punadmin" class="pun">
+        <div id="adminconsole">
+          <div id="adminmenu" class="blockmenu">
+            <h2><span>Admin menu</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li><a href="admin_index.php.html">Index</a></li>
 
-<div id="brdheader" class="block">
-	<div class="box">
-		<div id="headerimg"><img src="images/top.gif" alt="SPOON.net.nz" /></div>
-		<div id="brdmenu" class="inbox">
-			<ul>
-				<li id="navindex"><a href="index.php.html">Index</a></li>
-				<li id="navforums"><a href="forum.php.html">Forums</a></li>
-				<li id="navsearch"><a href="search.php.html">Search</a></li>
-				<li id="navprofile"><a href="profile.php%3Fid=2.html">Profile</a></li>
-				<li id="navadmin"><a href="admin_index.php.html">Administration</a></li>
-				<li id="navlogout"><a href="login.php%3Faction=out&amp;id=2.html">Logout</a></li>
-			</ul>
-		</div>
-		<div id="brdwelcome" class="inbox">
-			<ul class="conl">
-				<li>Logged in as <strong>spoon</strong></li>
-				<li>Last visit: Today 07:36:09</li>
-			</ul>
-			<div class="clearer"></div>
-		</div>
-	</div>
-</div>
+                  <li><a href="admin_categories.php.html">Categories</a></li>
 
+                  <li class="isactive">
+                    <a href="admin_forums.php.html">Forums</a>
+                  </li>
 
+                  <li><a href="admin_users.php.html">Users</a></li>
 
-<div id="adminconsole">
-	<div id="adminmenu" class="blockmenu">
-		<h2><span>Admin menu</span></h2>
-		<div class="box">
-			<div class="inbox">
-				<ul>
-					<li><a href="admin_index.php.html">Index</a></li>
-	
-					<li><a href="admin_categories.php.html">Categories</a></li>
-	
-					<li class="isactive"><a href="admin_forums.php.html">Forums</a></li>
-				
-					<li><a href="admin_users.php.html">Users</a></li>
-	
-					<li><a href="admin_groups.php.html">User groups</a></li>
-	
-					<li><a href="admin_options.php.html">Options</a></li>
-	
-					<li><a href="admin_permissions.php.html">Permissions</a></li>
-					<li><a href="admin_censoring.php.html">Censoring</a></li>
-	
-					<li><a href="admin_ranks.php.html">Ranks</a></li>
-					<li><a href="admin_bans.php.html">Bans</a></li>
-	
-					<li><a href="admin_prune.php.html">Prune</a></li>
-	
-					<li><a href="admin_maintenance.php.html">Maintenance</a></li>
-					<li><a href="admin_reports.php.html">Reports</a></li>		
-				</ul>
-			</div>
-		</div>
-		<h2 class="block2"><span>SPOON menu</span></h2>
-		<div class="box">
-			<div class="inbox">
-				<ul>
-	
-					<li><a href="admin_free.php.html">SPOON Free</a></li>
-		
-	
-					<li><a href="admin_recurring.php.html">Recurring</a></li>
-				
-		
-				</ul>
-			</div>
-		</div>
-		<h2 class="block2"><span>Plugins</span></h2>
-		<div class="box">
-			<div class="inbox">
-				<ul>
-					<li><a href="admin_loader.php%3Fplugin=AMP_Example.php.html">Example</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+                  <li><a href="admin_groups.php.html">User groups</a></li>
 
-	<div class="blockform">
-		<h2><span>Edit forum</span></h2>
-		<div class="box">
-			<form id="edit_forum" method="post" action="admin_forums.php%3Fedit_forum=6.html">
-				<p class="submittop"><input type="submit" name="save" value="Save changes" tabindex="6" /></p>
-				<div class="inform">
-					<fieldset>
-						<legend>Edit forum details</legend>
-						<div class="infldset">
-							<table class="aligntop" cellspacing="0">
-								<tr>
-									<th scope="row">Forum name</th>
-									<td><input type="text" name="forum_name" size="35" maxlength="80" value="SPOON Support" tabindex="1" /></td>
-								</tr>
-								<tr>
-									<th scope="row">Description (HTML)</th>
-									<td><textarea name="forum_desc" rows="3" cols="30" tabindex="2">Need assistance? You can post here for help.</textarea></td>
-								</tr>
-								<tr>
-									<th scope="row">Category</th>
-									<td>
-										<select name="cat_id" tabindex="3">
-											<option value="1">SPOON Hosting</option>
-											<option value="3">SPOON News</option>
-											<option value="4" selected="selected">SPOON Client Support</option>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">Sort topics by</th>
-									<td>
-										<select name="sort_by" tabindex="4">
-											<option value="0" selected="selected">Last post</option>
-											<option value="1">Topic start</option>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">Redirect URL</th>
-									<td><input type="text" name="redirect_url" size="30" maxlength="100" value="" tabindex="5" /></td>
-								</tr>
-							</table>
-						</div>
-					</fieldset>
-				</div>
-				<div class="inform">
-					<fieldset>
-						<legend>Edit group permissions for this forum</legend>
-						<div class="infldset">
-							<p>In this form, you can set the forum specific permissions for the different user groups. If you haven't made any changes to this forums group permissions, what you see below is the default based on settings in <a href="admin_groups.php.html">User groups</a>. Administrators always have full permissions and are thus excluded. Permission settings that differ from the default permissions for the user group are marked red. The "Read forum" permission checkbox will be disabled if the group in question lacks the "Read board" permission. For redirect forums, only the "Read forum" permission is editable.</p>
-							<table id="forumperms" cellspacing="0">
-							<thead>
-								<tr>
-									<th class="atcl">&nbsp;</th>
-									<th>Read forum</th>
-									<th>Post replies</th>
-									<th>Post topics</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th class="atcl">Moderators</th>
-									<td>
-										<input type="hidden" name="read_forum_old[2]" value="1" />
-										<input type="checkbox" name="read_forum_new[2]" value="1" checked="checked" />
-									</td>
-									<td>
-										<input type="hidden" name="post_replies_old[2]" value="1" />
-										<input type="checkbox" name="post_replies_new[2]" value="1" checked="checked" />
-									</td>
-									<td>
-										<input type="hidden" name="post_topics_old[2]" value="1" />
-										<input type="checkbox" name="post_topics_new[2]" value="1" checked="checked" />
-									</td>
-								</tr>
-								<tr>
-									<th class="atcl">Guest</th>
-									<td>
-										<input type="hidden" name="read_forum_old[3]" value="1" />
-										<input type="checkbox" name="read_forum_new[3]" value="1" checked="checked" />
-									</td>
-									<td>
-										<input type="hidden" name="post_replies_old[3]" value="0" />
-										<input type="checkbox" name="post_replies_new[3]" value="1" />
-									</td>
-									<td>
-										<input type="hidden" name="post_topics_old[3]" value="0" />
-										<input type="checkbox" name="post_topics_new[3]" value="1" />
-									</td>
-								</tr>
-								<tr>
-									<th class="atcl">Members</th>
-									<td>
-										<input type="hidden" name="read_forum_old[4]" value="1" />
-										<input type="checkbox" name="read_forum_new[4]" value="1" checked="checked" />
-									</td>
-									<td>
-										<input type="hidden" name="post_replies_old[4]" value="1" />
-										<input type="checkbox" name="post_replies_new[4]" value="1" checked="checked" />
-									</td>
-									<td>
-										<input type="hidden" name="post_topics_old[4]" value="1" />
-										<input type="checkbox" name="post_topics_new[4]" value="1" checked="checked" />
-									</td>
-								</tr>
-								<tr>
-									<th class="atcl">SPOON</th>
-									<td>
-										<input type="hidden" name="read_forum_old[5]" value="1" />
-										<input type="checkbox" name="read_forum_new[5]" value="1" checked="checked" />
-									</td>
-									<td>
-										<input type="hidden" name="post_replies_old[5]" value="1" />
-										<input type="checkbox" name="post_replies_new[5]" value="1" checked="checked" />
-									</td>
-									<td>
-										<input type="hidden" name="post_topics_old[5]" value="1" />
-										<input type="checkbox" name="post_topics_new[5]" value="1" checked="checked" />
-									</td>
-								</tr>
-							</tbody>
-							</table>
-							<div class="fsetsubmit"><input type="submit" name="revert_perms" value="Revert to default" /></div>
-						</div>
-					</fieldset>
-				</div>
-				<p class="submitend"><input type="submit" name="save" value="Save changes" /></p>
-			</form>
-		</div>
-	</div>
-	<div class="clearer"></div>
-</div>
+                  <li><a href="admin_options.php.html">Options</a></li>
 
-<div id="brdfooter" class="block">
-	<h2><span>Board footer</span></h2>
-	<div class="box">
-		<div class="inbox">
-			<p class="conr">Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy; Copyright 2002&#8211;2005 Rickard Andersson</p>
-			<p class="conr">[ Generated in 0.007 seconds, 8 queries executed ]</p>
-			<div class="clearer"></div>
-		</div>
-	</div>
-</div>
+                  <li><a href="admin_permissions.php.html">Permissions</a></li>
+                  <li><a href="admin_censoring.php.html">Censoring</a></li>
 
-</div>
-</div>
+                  <li><a href="admin_ranks.php.html">Ranks</a></li>
+                  <li><a href="admin_bans.php.html">Bans</a></li>
 
-</body>
+                  <li><a href="admin_prune.php.html">Prune</a></li>
+
+                  <li><a href="admin_maintenance.php.html">Maintenance</a></li>
+                  <li><a href="admin_reports.php.html">Reports</a></li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="block2"><span>SPOON menu</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li><a href="admin_free.php.html">SPOON Free</a></li>
+
+                  <li><a href="admin_recurring.php.html">Recurring</a></li>
+                </ul>
+              </div>
+            </div>
+            <h2 class="block2"><span>Plugins</span></h2>
+            <div class="box">
+              <div class="inbox">
+                <ul>
+                  <li>
+                    <a href="admin_loader.php%3Fplugin=AMP_Example.php.html"
+                      >Example</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="blockform">
+            <h2><span>Edit forum</span></h2>
+            <div class="box">
+              <form
+                id="edit_forum"
+                method="post"
+                action="admin_forums.php%3Fedit_forum=6.html"
+              >
+                <p class="submittop">
+                  <input
+                    type="submit"
+                    name="save"
+                    value="Save changes"
+                    tabindex="6"
+                  />
+                </p>
+                <div class="inform">
+                  <fieldset>
+                    <legend>Edit forum details</legend>
+                    <div class="infldset">
+                      <table class="aligntop" cellspacing="0">
+                        <tr>
+                          <th scope="row">Forum name</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="forum_name"
+                              size="35"
+                              maxlength="80"
+                              value="SPOON Support"
+                              tabindex="1"
+                            />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Description (HTML)</th>
+                          <td>
+                            <textarea
+                              name="forum_desc"
+                              rows="3"
+                              cols="30"
+                              tabindex="2"
+                            >
+Need assistance? You can post here for help.</textarea
+                            >
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Category</th>
+                          <td>
+                            <select name="cat_id" tabindex="3">
+                              <option value="1">SPOON Hosting</option>
+                              <option value="3">SPOON News</option>
+                              <option value="4" selected="selected">
+                                SPOON Client Support
+                              </option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sort topics by</th>
+                          <td>
+                            <select name="sort_by" tabindex="4">
+                              <option value="0" selected="selected">
+                                Last post
+                              </option>
+                              <option value="1">Topic start</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Redirect URL</th>
+                          <td>
+                            <input
+                              type="text"
+                              name="redirect_url"
+                              size="30"
+                              maxlength="100"
+                              value=""
+                              tabindex="5"
+                            />
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="inform">
+                  <fieldset>
+                    <legend>Edit group permissions for this forum</legend>
+                    <div class="infldset">
+                      <p>
+                        In this form, you can set the forum specific permissions
+                        for the different user groups. If you haven't made any
+                        changes to this forums group permissions, what you see
+                        below is the default based on settings in
+                        <a href="admin_groups.php.html">User groups</a>.
+                        Administrators always have full permissions and are thus
+                        excluded. Permission settings that differ from the
+                        default permissions for the user group are marked red.
+                        The "Read forum" permission checkbox will be disabled if
+                        the group in question lacks the "Read board" permission.
+                        For redirect forums, only the "Read forum" permission is
+                        editable.
+                      </p>
+                      <table id="forumperms" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th class="atcl">&nbsp;</th>
+                            <th>Read forum</th>
+                            <th>Post replies</th>
+                            <th>Post topics</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="atcl">Moderators</th>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="read_forum_old[2]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="read_forum_new[2]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="post_replies_old[2]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="post_replies_new[2]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="post_topics_old[2]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="post_topics_new[2]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="atcl">Guest</th>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="read_forum_old[3]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="read_forum_new[3]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="post_replies_old[3]"
+                                value="0"
+                              />
+                              <input
+                                type="checkbox"
+                                name="post_replies_new[3]"
+                                value="1"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="post_topics_old[3]"
+                                value="0"
+                              />
+                              <input
+                                type="checkbox"
+                                name="post_topics_new[3]"
+                                value="1"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="atcl">Members</th>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="read_forum_old[4]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="read_forum_new[4]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="post_replies_old[4]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="post_replies_new[4]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="post_topics_old[4]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="post_topics_new[4]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="atcl">SPOON</th>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="read_forum_old[5]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="read_forum_new[5]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="post_replies_old[5]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="post_replies_new[5]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                            <td>
+                              <input
+                                type="hidden"
+                                name="post_topics_old[5]"
+                                value="1"
+                              />
+                              <input
+                                type="checkbox"
+                                name="post_topics_new[5]"
+                                value="1"
+                                checked="checked"
+                              />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="fsetsubmit">
+                        <input
+                          type="submit"
+                          name="revert_perms"
+                          value="Revert to default"
+                        />
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <p class="submitend">
+                  <input type="submit" name="save" value="Save changes" />
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="clearer"></div>
+        </div>
+
+        <div id="brdfooter" class="block">
+          <h2><span>Board footer</span></h2>
+          <div class="box">
+            <div class="inbox">
+              <p class="conr">
+                Powered by <a href="http://www.punbb.org/">PunBB</a><br />&copy;
+                Copyright 2002&#8211;2005 Rickard Andersson
+              </p>
+              <p class="conr">
+                [ Generated in 0.007 seconds, 8 queries executed ]
+              </p>
+              <div class="clearer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

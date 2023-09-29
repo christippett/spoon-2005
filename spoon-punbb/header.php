@@ -69,7 +69,7 @@ if (!defined('PUN_ALLOW_INDEX'))
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="manifest" href="/site.webmanifest" />
-<script defer data-domain="spoon.christippett.dev" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="spoon.net.nz" src="https://plausible.io/js/plausible.js"></script>
 <?php
 if(!strpos($_SERVER['HTTP_USER_AGENT'], "MSIE") || strpos($_SERVER['HTTP_USER_AGENT'], "Opera")) {
 ?>
